@@ -1,0 +1,35 @@
+{
+  "name": "replace-constructor",
+  "version": "1.0.0",
+  "description": "Replace/wrap a class constructor",
+  "license": "MIT",
+  "author": {
+    "name": "Vincent Weevers",
+    "email": "mail@vincentweevers.nl"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "babel-tape-runner test/*.js | tap-spec",
+    "build": "babel src.js -o index.js",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "~4.3.0"
+  },
+  "keywords": [
+    "class",
+    "constructor",
+    "es6"
+  ],
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=2.0.0"
+  },
+  "repository": "vweevers/replace-constructor",
+  "bugs": "https://github.com/vweevers/replace-constructor/issues",
+  "homepage": "https://github.com/vweevers/replace-constructor"
+}
